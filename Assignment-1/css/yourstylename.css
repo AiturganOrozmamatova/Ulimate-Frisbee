@@ -1,0 +1,138 @@
+header{
+    background-color: #808000;
+    height: 300px;
+    color:beige;
+}
+header h1{
+    color: white;
+    text-align:left;
+    font-size: 600%;
+    font-style: oblique;
+}
+nav a{
+    color: white;
+    font-size: 200%;
+    font-style: oblique;
+}
+body{
+    background-color: beige;
+}
+.left img{
+    width: 1500px;
+    height: 750px;
+     outline: 10px solid #808000;  /* Чёрная рамка */
+    border: 15px solid #fff; /* Белая рамка */
+    border-radius: 10px; /
+}
+.center{
+     display: block;
+  margin: 0 auto;
+}
+h2{
+    color:white;
+    font-size: 500%;
+    text-align: center;
+    font-style: oblique;
+}
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
+.top-menu {
+  margin: 0 60px;
+  position: relative;
+  background: rgba(255,255,255,.1);    
+  box-shadow: 
+    inset 1px 0 0 rgba(255,255,255,.1), 
+    inset -1px 0 0 rgba(255,255,255,.1), 
+    inset 150px 0 150px -150px rgba(255,255,255,.12), 
+    inset -150px 0 150px -150px rgba(255,255,255,.12);
+    position: absolute;
+    top: 300px;
+    right:inherit;
+}
+.top-menu:before,
+.top-menu:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+.top-menu:before {
+  top: 0;
+  border-bottom: 1px dashed rgba(255,255,255,.2);
+}
+.top-menu:after {
+  bottom: 0;
+  border-top: 1px dashed rgba(255,255,255,.2);
+}
+.menu-main {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.menu-main:before, 
+.menu-main:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 0;
+  top: 8px;
+  border-top: 18px solid dashed rgba(255,255,255,.2);
+  border-bottom: 18px solid dashed rgba(255,255,255,.2);
+  transform: rotate(360deg);
+  z-index: -1;
+}
+.menu-main:before {
+  left: -30px;
+  border-left: 12px solid rgba(255, 255, 255, 0);
+}
+.menu-main:after {
+  right: -30px;
+  border-right: 12px solid rgba(255, 255, 255, 0);
+}
+.menu-main li {
+  display: inline-block;
+  margin-right: -4px;
+}
+.menu-main a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+  font-family: 'PT Sans Caption', sans-serif;
+  color: white;
+  transition: .3s linear;
+}
+.menu-main a.current,
+.menu-main a:hover {background: rgba(0,0,0,.2);}
+@media (max-width: 680px) {
+.top-menu {margin: 0;}
+.menu-main li {
+  display: block;
+  margin-right: 0;
+}
+.menu-main:before, 
+.menu-main:after {content: none;}
+.menu-main a {display: block;}
+}
+.right {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 0 auto;
+    font-style: oblique;
+    background-color:  #808000;
+    color: white;
+    
+}
+th{
+    font-size: 250%;
+}
+td{
+    text-align: center;
+    font-size = 150%;
+     
+    margin-right: auto;
+}
+
+
